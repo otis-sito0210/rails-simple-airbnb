@@ -13,3 +13,52 @@
  *= require_tree .
  *= require_self
  */
+
+
+ /* app/assets/stylesheets/flats.css.scss (or .css) */
+
+.flats {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flat {
+  border: 1px solid #fdfbfb;
+  padding: 20px;
+  margin: 10px;
+  width: 300px;
+  background-color: #f4f4f4;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+.flat h2 {
+  font-size: 1.5rem;
+}
+
+.flat p {
+  margin: 10px 0;
+}
+
+nav {
+  background-color: #f0f0f0; /* Soft grey background */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.brand {
+  color: rgb(0, 0, 0); /* Font color blue */
+}
+
+.small-text {
+  font-size: 14px; /* Adjust the font size to your preference */
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}

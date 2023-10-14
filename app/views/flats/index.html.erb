@@ -1,0 +1,43 @@
+<nav>
+  <div class="container">
+    <div class="row">
+      <span class="nav-brand ml-5">Simple Airbnb</span>
+    </div>
+  </div>
+    <div class="row">
+      <%= link_to "Add New", new_flat_path, class: "btn btn-primary mr-5" %>
+    </div>
+</nav>
+
+
+ <div class="container mt-3">
+  <h1>All Our Flats (<%= @flats.length %>)</h1>
+
+  <div class="flats">
+  <% @flats.each do |flat| %>
+    <div class="flat">
+      <h2><%= flat.name %></h2>
+      <p class="small-text"><%= flat.address %></p>
+      <div class="row">
+        <div class="col-md-6">
+          <p>
+            <i class="fas fa-users"></i>
+            <%= flat.number_of_guests %>
+          </p>
+        </div>
+        <div class="col-md-6">
+          <p>
+            <i class="fas fa-euro-sign"></i>
+            <%= flat.price_per_night %>
+          </p>
+        </div>
+      </div>
+       <div class="bg-white flex">
+        <p>More Info</p>
+        <p>Edit</p>
+        <p>Delete</p>
+
+      </div>
+    </div>
+  <% end %>
+</div>
